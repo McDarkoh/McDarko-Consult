@@ -1,70 +1,117 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
 }
-/*--------Navigation---------*/
-#nav-bar
-{
-    position: sticky;
-    top: 0;
-    z-index: 10;
+.header{
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(1, 2, 1, 0.16), rgba(1,1,1,0.5)), url(images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
-.navbar-brand img
-{
-    height: 40px;
-    padding-left: 30px;
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
 }
-.navbar-nav li
-{
-    padding: 0 10px;
+nav img {
+    width: 50px;
 }
-.navbar-nav li a
-{
-    float: right;
-    text-align: left;
-}
-#nav-bar ul li a:hover
-{
-    color: blue !important;
-}
-.navbar
-{
-    background: bisque;
-
-}
-.navbar-toggler
-{
-    border: none !important;
-}
-.nav-link
-{
-    color: black !important;
-    font-weight: 600;
-    font-size: 18px;
-    font-style: bold;
-}
-.navbar-nav
-{
+.nav-links{
+    flex: 1;
     text-align: right;
-    float: right;
 }
-
-/*--------slider-------*/
-#Slider
-{
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f33442;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
     width: 100%;
-} 
-.d-block{
-    height: 400px;
-    width: 1500px;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f33442;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #ff67;
+    background: #ff67;
+    transition: 1s;
+}
+nav .fa
+{
+    display: none;
 }
 
-.carousel-caption h5
+@media(max-width: 700px)
 {
-    color: black;
-    font-size: 42px;
-    font-style: bold;
+    .text-box hi
+    {
+        font-size: 20px;
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: #f33442;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
 }
 /*---------------About---------*/
 #about
@@ -84,17 +131,18 @@
     text-align: justify;
     font-weight: bold;
 }
-.skill-bar p
+.skills p
 {
     margin-bottom: 6px;
     font-weight: bolder;
     font-style: italic;
+    font-weight: 600;
 }
-.Progress-bar 
+.progress-bar 
 {
     border-radius: 16px;
 }
-.Progress
+.progress
 {
     border-radius: 16px;
     margin-bottom: 20px; 
@@ -102,7 +150,7 @@
 /*---------------Services-------------*/
 #services
 {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/1.jpg);
+    background-image: linear-gradient(rgba(1, 2, 1, 0.16), rgba(1,1,1,0.5)), url(images/1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -156,7 +204,6 @@
     cursor: pointer;
     transition: 0.5s;
 }
-
 /*-------------Promo------------*/
 #promo
 {
@@ -195,8 +242,8 @@
 .form-group
 {
     background: #999;
-    padding: 1px;
-    margin: 8px;
+    padding: 3px;
+    margin: 12px;
 }
 ::placeholder
 {
@@ -205,11 +252,11 @@
 .follow
 {
     background:lightgray;
-    padding: 10px;
-    margin: 8px; 
+    padding: 3px;
+    margin: 12px; 
     font-style: bold; 
     color: blue; 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #name
@@ -220,16 +267,11 @@
 }
 .contact-info .social
 {
-    display: block;
+    display:grid ;
     background: wheat;
     margin: 5px;
     font-style: italic;
     color: crimson;
-}
-.social .fa
-{
-    margin: 10px;
-    color: deeppink 
 }
 
 .so-icon
@@ -254,6 +296,11 @@
     margin: 3px;
     color: red;
 }
+
+
+
+
+
 
 
 
