@@ -5,7 +5,7 @@
 .header{
 min-height: 100vh;
 width: 100%;
-background-image: linear-gradient(rgba(1, 2, 1, 0.16), rgba(1,1,1,0.5)), url(images/3.jpg);
+background-image: url(images/3.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -15,6 +15,10 @@ display: flex;
 padding: 2% 6%;
 justify-content: space-between;
 align-items: center;
+background: green;
+font-style: bold;
+font-size: 25px;
+height: 15px;
 }
 nav img {
     width: 50px;
@@ -57,22 +61,29 @@ nav img {
 }
 .text-box h1{
     font-size: 60px;
+    border-radius: 16px;
+    background: lightskyblue;
+    color: black;
 }
 .text-box p{
     margin: 10px 0 40px;
     font-size: 16px;
-    color: #fff;
+    color: black;
+    border-radius: 16px;
+    background: lightskyblue;
+    text-align: center;
 }
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: black;
     border: 1px solid #f33442;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 16px;
 }
 .hero-btn:hover{
     border: 1px solid #ff67;
@@ -150,7 +161,7 @@ nav .fa
 /*---------------Services-------------*/
 #services
 {
-    background-image: linear-gradient(rgba(1, 2, 1, 0.16), rgba(1,1,1,0.5)), url(images/1.jpg);
+    background-image:  url(images/1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -162,10 +173,11 @@ nav .fa
 {
     color: black;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 6px;
     font-style: bold;
     background: #efefef;
     text-decoration: underline;
+    border-radius: 14px;
 }
 #services h1::after
 {
@@ -195,19 +207,19 @@ nav .fa
 {
     font-size: 16px;
     margin-top: 20px;
-    color: white;
+    color: black;
     font-style: bold;
 }
 .services .col-md-3:hover
 {
-    background: limegreen;
+    background: lemonchiffon;
     cursor: pointer;
     transition: 0.5s;
 }
 /*-------------Promo------------*/
 #promo
 {
-    background-image: linear-gradient(rgba(1, 2, 1, 0.16), rgba(1,1,1,0.5)), url(images/13.jpg);
+    background-image: url(images/13.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -219,6 +231,9 @@ nav .fa
 #promo p
 {
     color: #efefef;
+    background: lightgreen;
+    border-radius: 16px;
+    color: red;
 }
 .contact
 {
