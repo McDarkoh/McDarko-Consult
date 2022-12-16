@@ -1,0 +1,255 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*--------Navigation---------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    color: blue !important;
+}
+.navbar
+{
+    background: bisque;
+
+}
+.navbar-toggler
+{
+    border: none !important;
+}
+.nav-link
+{
+    color: black !important;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: bold;
+}
+
+/*--------slider-------*/
+#Slider
+{
+    width: 100%;
+} 
+.d-block{
+    height: 500px;
+    width: 1500px;
+}
+
+.carousel-caption h5
+{
+    color: black;
+    font-size: 42px;
+    font-style: bold;
+}
+/*---------------About---------*/
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content
+{
+    padding-top: 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+.skill-bar p
+{
+    margin-bottom: 6px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.Progress-bar 
+{
+    border-radius: 16px;
+}
+.Progress
+{
+    border-radius: 16px;
+    margin-bottom: 20px; 
+}
+/*---------------Services-------------*/
+#services
+{
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    color: #efefef !important;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    font-style: bold;
+    background: #efefef;
+    text-decoration: underline;
+}
+#services h1::after
+{
+    content: "";
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 17px;
+    margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80x;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: hotpink;
+}
+#services p
+{
+    font-size: 16px;
+    margin-top: 20px;
+    color: white;
+    font-style: bold;
+}
+.services .col-md-3:hover
+{
+    background: limegreen;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*-------------Promo------------*/
+#promo
+{
+    background-image: url(images/13.jpg);
+    background-size: cover;
+    color: #efefef !important;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+    text-align: center;
+}
+.contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+    text-align: center;
+}
+#contact h1
+{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-style: bold;
+}
+.contact-form
+{
+    padding: 18px;
+}
+.form-group
+{
+    background: #999;
+    padding: 1px;
+    margin: 8px;
+}
+::placeholder
+{
+    color: #999;
+}
+.follow
+{
+    background:lightgray;
+    padding: 10px;
+    margin: 8px; 
+    font-style: bold; 
+    color: blue; 
+    font-size: 18px;
+}
+
+#name
+{
+    padding: 12px;
+    margin: 8px; 
+    color: darkgreen;
+}
+.contact-info .social
+{
+    display: block;
+    background: wheat;
+    margin: 5px;
+    font-style: italic;
+    color: crimson;
+}
+.social .fa
+{
+    margin: 10px;
+    color: deeppink 
+}
+
+.so-icon
+{
+    text-decoration: none;
+    margin: 15px;
+    color: chartreuse;
+}
+
+
+    
+/*--------------footer----------*/
+#footer
+{
+    background: honeydew;
+    color:#555;
+    padding: 12px;
+    text-align: center;
+}
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
+}
+
+
+
+
+
+
