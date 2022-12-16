@@ -52,7 +52,7 @@
     width: 100%;
 } 
 .d-block{
-    height: 500px;
+    height: 440px;
     width: 1500px;
 }
 
@@ -100,7 +100,6 @@
 {
     background-image: url(images/1.jpg);
     background-size: cover;
-    color: #efefef !important;
     background-position: center;
     background-attachment: fixed;
     padding-top: 50px;
@@ -158,7 +157,6 @@
 {
     background-image: url(images/13.jpg);
     background-size: cover;
-    color: #efefef !important;
     background-position: center;
     background-attachment: fixed;
     padding: 100px;
