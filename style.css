@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*----------------NavigationLink---------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img
+{
+    height: 40px;  padding-left: 30px;
+}
+
+.navbar-nav li
+{
+    padding: 2px; display: inline-flex; font-style: bold;
+    float: left;
+}
+
+.navbar-nav li a
+{
+    float: right;text-align: left; font-weight: bold;
+    float: right;
+}
+
+#nav-bar ul li a:hover
+{
+    color:rgba(106, 4, 62, 0.618);
+}
+
+.navbar
+{
+    background: rgba(2, 64, 91, 0.426);
+    border-radius: 1px;
+}
+
+.navbar-toggler
+{
+    border: none;
+}
+
+.nav-link
+{
+    color: darkgreen; font-weight: 600; font-size: 18px;
+}
+
+
+/*-----------------------Submenu----------*/
+.sub-menu
+{
+    display: none;
+}
+
+.sub-menu ul li a
+{
+    text-decoration: none;
+    font-style: bold;
+    padding-right: 30px;
+    text-align:justify;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.active, .navbar-nav li:hover
+{
+    background: rgba(240, 251, 255, 0.645);
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.navbar-nav li:hover .sub-menu
+{
+    display: inline-block;
+    position: relative;
+    background: rgba(191, 238, 144, 0.474);
+    margin-left: -10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar-nav li:hover .sub-menu ul
+{
+    display: block;
+    margin: 5px;
+}
+
+.navbar-nav li:hover .sub-menu ul li
+{
+    width: 100%;
+    text-align: center;
+
+}
+
+
+/*----------------Slider-----------*/
+#Slider
+{
+    width: 100%;
+    height: 800px;
+}
+
+
+.carousel-caption
+{   
+    top: 50%; 
+    overflow-y: hidden;
+}
+
+.carousel-caption h5
+{   color: red;
+    font-size: 45px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.carousel-caption p
+{   color:darkblue;
+    font-size: 15px;
+    background: greenyellow;
+    border-radius: 16px;
+    margin-top: 60px;
+    overflow-y: hidden;
+    font-weight: bold;
+}
+
+.carousel-caption span
+{
+    background: gold;
+    height: 5px;
+    width: 300px;
+}
+.carousel-item img
+{   
+    height: 650px;
+    width: 100%;
+}
+
+/*---------------About---------*/
+
+#about
+{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: rgb(232, 176, 176);
+}
+
+#about .btn
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.row
+{
+    height: 400px;
+}
+.row h2
+{
+    overflow: hidden;
+}
+
+.about-content
+{
+    padding-top: 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+/*---------------Services-------------*/
+#services
+{
+    background-color: rgba(226, 242, 105, 0.332);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 300px;
+    overflow-y: hidden;
+}
+
+#services h1
+{
+    color: rgba(105, 4, 4, 0.951);
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    text-decoration: underline;
+    overflow-y: hidden;
+}
+
+.services
+{
+    margin-top: 40px;
+}
+
+#services h3
+{
+    overflow: hidden;
+}
+#services p
+{
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: left;
+    text-decoration: overline;
+}
+
+.progress
+{
+    color: lightcoral;
+    fill:aquamarine;
+    height: 20px;
+}
+
+.txxt .progress .progress-bar
+{
+    background : chocolate;
+}
+
+.tst .progress .progress-bar
+{
+    background : green;
+}
+
+
+.txt .progress .progress-bar
+{
+    background : darkcyan;
+}
+
+/*-------------Promo------------*/
+#promo
+{
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+    text-align: center;
+    animation: zoom-out 5s;
+}
+#promo p
+{
+    color: #efefef;
+    background: lightgreen;
+    border-radius: 16px;
+    color: red;
+}
+
+#contact
+{
+    background-color:rgb(139, 201, 204);
+    background-position: initial;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#contact .row
+{
+    height: 300px;
+}
+
+.contact
+{
+    background: #efefef88;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+    text-align: center;
+}
+#contact h1
+{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-style: bold;
+    overflow: hidden;
+}
+.contact-form
+{
+    padding: 18px;
+}
+.form-group
+{
+    background: #999;
+    margin: 5px; 
+}
+::placeholder
+{
+    color: #999;
+}
+.follow
+{
+    background:lightgray;
+    padding: 4px;
+    margin: 5px; 
+    font-style: bold; 
+    color: blue; 
+    font-size: 16px;
+}
+
+#name
+{
+    padding: 12px;
+    margin: 8px; 
+    color: darkgreen;
+}
+.contact-info .social
+{
+    display:grid ;
+    background: wheat;
+    margin: 5px;
+    font-style: italic;
+    color: crimson;
+    padding-left: 30px;
+}
+
+.so-icon
+{
+    text-decoration: none;
+    margin: 5px;
+    color: chartreuse;
+}
+
+/*--------------------Our Team--------------*/
+
+#Our-Team
+{
+    overflow-y: hidden;
+    background-color: rgba(83, 1, 81, 0.428);
+    padding-bottom: 20px;
+    border-radius: 16px;
+    border-color: black;
+}
+#Our-Team h1
+{
+    text-align: center;
+    text-decoration: underline;
+    color: darkblue;
+    padding-top: 30x;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+#Our-Team p
+{
+    padding-left: 15px;
+    font-size: 25x;
+    color: black;
+    font-weight: bold;
+}
+#Our-Team .row
+{
+    margin-top: 20px;
+    position: relative;
+    display: inline-flex;
+    padding-bottom: 20px;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.profile
+{
+    padding: 30px 10px 10px;
+    background-color:azure;
+    height: 500px;
+    overflow-y: hidden;
+    border-radius: 16px;
+}
+
+.User
+{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    overflow-y: hidden;
+
+}
+
+/*-----------.profile img
+{
+    border: 10px solid #efefef;
+    width: 300px;
+    height: 200px;
+}------------*/
+
+.profile h3
+{
+    font-size: 30px;
+    margin-top: 15px;
+    color: darkred;
+    overflow-y: hidden;
+}
+
+#Our-Team span
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.profile:hover
+{
+    box-shadow: 0 0 15px 5px cornflowerblue;
+    cursor: pointer;
+    transition: 0.7s;
+}
+    
+/*----------------------------Blog----------------------*/
+
+#blog
+{
+    background-color:rgb(204, 246, 204) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+}
+
+#blog h1
+{
+    color: rgb(94, 5, 11);
+    padding-top: 6px;
+    font-style: bold;
+    text-decoration: underline;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.blog
+{
+    margin-top: 40px;
+}
+
+.blog-img
+{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display:inline-flex;
+    
+    
+    
+}
+
+#blog a
+{
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(72, 5, 5);
+    
+}
+
+#blog a:hover
+{
+    box-shadow: 0 0 15px 5px  rgb(43, 56, 2);
+    color: rgb(233, 8, 42);
+    transition: 0.5s;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.row-blog
+{
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 3px;
+    background-color: rgb(149, 243, 243);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+}
+
+/*--------------footer----------*/
+#footer
+{
+    background: rgb(1, 114, 114);
+    color: rgb(119, 1, 119);
+    padding: 12px;
+    text-align: center;
+    font-weight: bolder;
+}
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
+}
